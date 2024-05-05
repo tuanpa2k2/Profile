@@ -1,14 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-import logo from "../../assets/default.jpg";
+// import logo from "../../assets/default.jpg";
 import "./NavbarComp.scss";
 
 const NarbarComp = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={logo} alt="logo" />
+        {/* <img src={logo} alt="logo" /> */}
+        <span>my cv</span>
       </div>
       <ul className="nav_menu">
         <li>Trang chủ</li>

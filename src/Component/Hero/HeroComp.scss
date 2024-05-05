@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  margin-top: 40px;
+  padding: 40px 0;
 
   .img_hero {
     width: 300px;
@@ -14,6 +14,11 @@
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
+      border: 2px solid transparent;
+
+      &:hover {
+        border-color: #d45a3b;
+      }
     }
   }
 
@@ -44,4 +49,9 @@
     font-size: 24px;
     line-height: 40px;
   }
+}
+
+hr {
+  width: calc(100% - 240px);
+  color: #fff;
 }
