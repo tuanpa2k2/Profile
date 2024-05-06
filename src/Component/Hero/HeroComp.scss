@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 0;
+  padding: 20px 160px;
 
   .img_hero {
     width: 300px;
@@ -23,9 +23,7 @@
   }
 
   h1 {
-    text-align: center;
-    width: 70%;
-    font-size: 45px;
+    font-size: 35px;
 
     span {
       background: linear-gradient(270deg, #df8908 10%, #b415ff 102.06%);
@@ -43,15 +41,8 @@
   }
 
   p {
-    margin: 0;
-    width: 50%;
     text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
   }
-}
-
-hr {
-  width: calc(100% - 240px);
-  color: #fff;
 }

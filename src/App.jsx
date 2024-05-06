@@ -3,6 +3,7 @@ import React from "react";
 import NavbarComp from "./Component/Navbar/NavbarComp";
 import HeroComp from "./Component/Hero/HeroComp";
 import AboutComp from "./Component/About/AboutComp";
+import ServiceComp from "./Component/Service/ServiceComp";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <NavbarComp />
       <HeroComp />
       <AboutComp />
+      <ServiceComp />
     </div>
   );
 };

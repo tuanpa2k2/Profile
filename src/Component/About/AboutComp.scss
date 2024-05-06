@@ -3,26 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 170px;
-
-  .about_title {
-    position: relative;
-    padding: 30px;
-
-    span {
-      font-weight: 600;
-      font-size: 60px;
-    }
-
-    img {
-      position: absolute;
-      top: 40%;
-      right: 0;
-      width: 50%;
-      z-index: -1;
-      opacity: 0.8;
-    }
-  }
+  padding: var(--padding-layout);
+  margin: var(--margin-layout);
 
   .about_sections {
     display: flex;
@@ -32,7 +14,7 @@
 
     .about_left {
       height: 350px;
-      width: 280px;
+      width: 290px;
 
       img {
         width: 100%;
@@ -47,7 +29,10 @@
       flex: 1;
 
       .about_para {
+        margin-bottom: 18px;
+
         p {
+          padding: 10px 0;
           font-size: 18px;
           letter-spacing: normal;
         }
@@ -60,12 +45,7 @@
           align-items: center;
           gap: 15px;
           transition: 0.3s;
-
-          p {
-            min-width: 150px;
-            font-weight: 600;
-            font-size: 18px;
-          }
+          padding: 10px 0;
 
           hr {
             margin: 0;

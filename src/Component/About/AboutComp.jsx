@@ -1,17 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-import theme_pattern from "../../assets/theme_pattern.svg";
 import profile_img from "../../assets/default.jpg";
 import "./AboutComp.scss";
+import TitleComp from "../Title/TitleComp";
 
 const AboutComp = () => {
   return (
     <div className="container_about">
-      <div className="about_title">
-        <span>About me</span>
-        <img src={theme_pattern} alt="" />
-      </div>
+      <TitleComp title="About me" />
       <div className="about_sections">
         <div className="about_left">
           <img src={profile_img} alt="" />
@@ -19,11 +16,13 @@ const AboutComp = () => {
         <div className="about_right">
           <div className="about_para">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit, reiciendis repudiandae dolorem, in provident
-              praesentium optio repellat, consequatur adipisci nam dolores tempore at!
+              Nhiều người kỳ vọng HLV Kim Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính
+              ông Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla laborum eligendi molestiae earum
+              Ngay mùa đầu nắm quyền tại Jeonbuk, ông Kim đã lên ngôi ở K-League. Tuy nhiên, điều đó không được đánh giá
+              cao, bởi ông chỉ đơn thuần là tiếp quản đội hình mạnh của Jeonbuk và kế thừa lối chơi được xây dựng từ
+              người tiền nhiệm như Jose Morais hay Choi
             </p>
           </div>
           <div className="about_skills">

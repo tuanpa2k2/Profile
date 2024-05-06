@@ -1,0 +1,22 @@
+.titles {
+  position: relative;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: normal;
+    background: linear-gradient(270deg, #afff37 10%, #05edf4 102.06%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  img {
+    position: absolute;
+    top: 15px;
+    width: 130px;
+    right: -60px;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
