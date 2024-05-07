@@ -6,7 +6,7 @@
 
 :root {
   --padding-layout: 0 160px;
-  --margin-layout: 35px 0;
+  --margin-layout: 55px 0;
 }
 
 body {
@@ -32,6 +32,7 @@ a {
 p {
   font-weight: 500;
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
 li {
