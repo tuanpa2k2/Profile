@@ -7,8 +7,8 @@ import TitleComp from "../Title/TitleComp";
 
 const AboutComp = () => {
   return (
-    <div className="container_about">
-      <TitleComp title="About me" />
+    <div id="about" className="container_about">
+      <TitleComp title="Kĩ năng" />
       <div className="about_sections">
         <div className="about_left">
           <img src={profile_img} alt="" />

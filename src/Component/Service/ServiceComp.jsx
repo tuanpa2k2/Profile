@@ -8,9 +8,9 @@ import "./ServiceComp.scss";
 
 const ServiceComp = () => {
   return (
-    <div className="services">
+    <div id="service" className="services">
       <div className="services__title">
-        <TitleComp title="My services" />
+        <TitleComp title="Dịch vụ " />
       </div>
       <div className="services__container">
         {services_data.map((data, key) => {

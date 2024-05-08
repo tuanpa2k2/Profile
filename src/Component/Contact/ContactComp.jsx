@@ -7,11 +7,11 @@ import "./ContactComp.scss";
 
 const ContactComp = () => {
   return (
-    <div className="contact">
-      <TitleComp title="Get in touch" />
+    <div id="contact" className="contact">
+      <TitleComp title="Kết nối và liên hệ" />
       <div className="contact__container">
         <div className="contact__left">
-          <h2>Hãy nói với tôi</h2>
+          <h2>Liên hệ với tôi</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id harum consectetur tenetur ipsum labore soluta.
             Obcaecati, velit.
@@ -26,18 +26,18 @@ const ContactComp = () => {
             <MdLocationPin /> <p>Hà Nội</p>
           </div>
         </div>
-        <div className="contact__right">
+        <form className="contact__right">
           <label>Your name</label>
-          <input type="text" placeholder="Enter your name..." />
+          <input name="name" type="text" placeholder="Enter your name..." />
 
           <label>Your email</label>
-          <input type="email" placeholder="Enter your email..." />
+          <input name="email" type="email" placeholder="Enter your email..." />
 
           <label> Write your message</label>
           <textarea name="message" id="" placeholder="Enter your message..." />
 
           <button>Send mail</button>
-        </div>
+        </form>
       </div>
     </div>
   );

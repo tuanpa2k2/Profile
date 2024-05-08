@@ -8,8 +8,8 @@ import "./MyworkComp.scss";
 
 const MyworkComp = () => {
   return (
-    <div className="myworks">
-      <TitleComp title="My last work" />
+    <div id="mywork" className="myworks">
+      <TitleComp title="Dự án các nhân" />
       <div className="mywork__container">
         {mywork_data.map((data, key) => {
           return <img key={key} src={data.w_img} alt="w_img" />;
