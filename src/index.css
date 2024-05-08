@@ -6,6 +6,7 @@
 
 :root {
   --padding-layout: 0 160px;
+  --padding-layout-mobile: 0 50px;
   --margin-layout: 55px 0;
 }
 

@@ -1,14 +1,16 @@
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
+import { HiMenu } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./NavbarComp.scss";
 
 const NarbarComp = () => {
   const [menuActive, setMenuActive] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false); // scrolled add className 'sticky-header'
-  console.log(menuActive);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScrollNavbar);
@@ -29,7 +31,7 @@ const NarbarComp = () => {
       <div className="logo">
         <span>my cv</span>
       </div>
-      <ul className="nav_menu">
+      <ul className={isMobile ? "nav_link_mobile" : "nav_menu"} onClick={() => setIsMobile(false)}>
         <li onClick={() => setMenuActive("skill")} className={`${menuActive === "skill" ? "actives" : ""}`}>
           <AnchorLink className="anchor-link" offset={90} href="#about">
             Kĩ năng
@@ -52,6 +54,9 @@ const NarbarComp = () => {
         </li>
       </ul>
       <div className="nav_connect">Kết nối với tôi</div>
+      <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? <IoMdClose /> : <HiMenu />}
+      </button>
     </div>
   );
 };
