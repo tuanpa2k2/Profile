@@ -21,7 +21,23 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .titles {
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    img {
+      top: 16px;
+      width: 50px;
+      right: -38px;
+    }
+  }
+}
+
+@media (min-width: 482px) and (max-width: 786px) {
   .titles {
     margin-bottom: 15px;
 

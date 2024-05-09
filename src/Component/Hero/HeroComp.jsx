@@ -7,7 +7,7 @@ import "./HeroComp.scss";
 const HeroComp = () => {
   return (
     <div className="hero">
-      <h2>Hello mọi người,</h2>
+      <h2>Hii everyone,</h2>
       <div>
         <h1>
           Mình là <span>Phí Anh Tuấn</span>,

@@ -23,15 +23,15 @@ const FooterComp = () => {
       </div>
       <hr />
       <div className="footer__bottom">
-        <div className="footer__bottom_left">
-          <p>@ 2024 Snake AT. All rights reserved.</p>
-        </div>
         <div className="footer__bottom_right">
           <MdOutlinePhoneInTalk />
           <FaFacebook />
           <FaTiktok />
           <MdLocationPin />
           <FaUserSecret />
+        </div>
+        <div className="footer__bottom_left">
+          <p>@ 2024 Snake AT. All rights reserved.</p>
         </div>
       </div>
     </div>
