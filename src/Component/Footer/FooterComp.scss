@@ -103,3 +103,46 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footers {
+    padding: var(--padding-layout-mobile);
+
+    .footer__top {
+      display: flex;
+
+      .footer__top__left {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+
+      .footer__top__right {
+        display: none;
+      }
+    }
+
+    hr {
+      height: 2px;
+    }
+
+    .footer__bottom {
+      .footer__bottom_left {
+        p {
+          font-size: 17px;
+        }
+      }
+
+      .footer__bottom_right {
+        gap: 15px;
+
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
     grid-template-columns: 0.8fr 1fr;
     gap: 20px;
     height: 100%;
+    width: 100%;
     margin-bottom: 20px;
 
     .contact__left {
@@ -30,6 +31,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         letter-spacing: normal;
+      }
+
+      span {
+        display: none;
       }
 
       .group__icon {
@@ -95,6 +100,67 @@
         color: #fff;
         font-size: 16px;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: var(--padding-layout-mobile);
+    margin: var(--margin-layout-mobile);
+
+    .contact__container {
+      display: flex;
+      flex-direction: column;
+
+      .contact__left {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid darkgray;
+
+        h2 {
+          display: none;
+        }
+
+        span {
+          text-transform: uppercase;
+          display: flex;
+          gap: 10px;
+          font-size: 19px;
+          font-weight: 500;
+        }
+
+        .group__icon {
+          padding-left: 10px;
+
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .contact__right {
+        label {
+          font-size: 18px;
+        }
+
+        input {
+          height: 40px;
+        }
+
+        input,
+        textarea {
+          font-size: 15px;
+        }
+
+        button {
+          border: 1px solid #fff;
+          padding: 8px 0;
+          font-size: 17px;
+        }
       }
     }
   }

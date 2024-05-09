@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
+import { TbHandClick } from "react-icons/tb";
+import TitleComp from "../Title/TitleComp";
 import profile_img from "../../assets/default.jpg";
 import "./AboutComp.scss";
-import TitleComp from "../Title/TitleComp";
 
 const AboutComp = () => {
   return (
@@ -20,9 +21,8 @@ const AboutComp = () => {
               ông Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
             </p>
             <p>
-              Ngay mùa đầu nắm quyền tại Jeonbuk, ông Kim đã lên ngôi ở K-League. Tuy nhiên, điều đó không được đánh giá
-              cao, bởi ông chỉ đơn thuần là tiếp quản đội hình mạnh của Jeonbuk và kế thừa lối chơi được xây dựng từ
-              người tiền nhiệm như Jose Morais hay Choi
+              Nhiều người kỳ vọng HLV Kim Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính
+              ông Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
             </p>
           </div>
           <div className="about_skills">
@@ -38,6 +38,10 @@ const AboutComp = () => {
             <div className="about_skill">
               <p>Github</p> <hr style={{ width: "70%" }} />
             </div>
+          </div>
+          <div className="btn__showmore">
+            <button>Show more</button>
+            <TbHandClick />
           </div>
         </div>
       </div>

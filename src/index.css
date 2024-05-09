@@ -6,8 +6,9 @@
 
 :root {
   --padding-layout: 0 160px;
-  --padding-layout-mobile: 0 50px;
   --margin-layout: 55px 0;
+  --padding-layout-mobile: 0 20px;
+  --margin-layout-mobile: 25px 0;
 }
 
 body {

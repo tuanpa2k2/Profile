@@ -10,7 +10,8 @@
   .mywork__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
+    width: 100%;
 
     img {
       transition: 0.3s;
@@ -38,6 +39,35 @@
     &:hover {
       cursor: pointer;
       background-color: blue;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .myworks {
+    padding: var(--padding-layout-mobile);
+    margin: var(--margin-layout-mobile);
+
+    .mywork__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .mywork__showmore {
+      padding: 10px;
+      border: 1px solid #fff;
+
+      p {
+        font-size: 17px;
+      }
+
+      img {
+        width: 17px;
+      }
     }
   }
 }

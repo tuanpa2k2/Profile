@@ -20,3 +20,19 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 768px) {
+  .titles {
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    img {
+      top: 16px;
+      width: 50px;
+      right: -38px;
+    }
+  }
+}

@@ -53,7 +53,11 @@ const NarbarComp = () => {
           </AnchorLink>
         </li>
       </ul>
-      <div className="nav_connect">Kết nối với tôi</div>
+      <div className="nav_connect">
+        <AnchorLink className="anchor-link" offset={90} href="#contact">
+          Kết nối với tôi
+        </AnchorLink>
+      </div>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? <IoMdClose /> : <HiMenu />}
       </button>

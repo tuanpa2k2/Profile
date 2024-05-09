@@ -10,10 +10,9 @@
     display: flex;
     width: 100%;
     gap: 40px;
-    height: fit-content;
 
     .about_left {
-      height: 350px;
+      height: 348px;
       width: 290px;
 
       img {
@@ -29,10 +28,12 @@
       flex: 1;
 
       .about_para {
-        margin-bottom: 18px;
+        margin-bottom: 10px;
 
         p {
-          padding: 10px 0;
+          width: 100%;
+          margin-bottom: 10px;
+          line-height: 25px;
           font-size: 18px;
           letter-spacing: normal;
         }
@@ -47,8 +48,11 @@
           transition: 0.3s;
           padding: 10px 0;
 
+          p {
+            width: 150px;
+          }
+
           hr {
-            margin: 0;
             border-radius: 10px;
             border-color: transparent;
             height: 5px;
@@ -58,6 +62,73 @@
           &:hover {
             cursor: pointer;
             transform: scale(1.03);
+          }
+        }
+      }
+
+      .btn__showmore {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        padding: 10px 35px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+
+        button {
+          background-color: transparent;
+          color: #fff;
+          font-size: 18px;
+        }
+
+        svg {
+          font-size: 19px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(131, 58, 180) 100%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container_about {
+    padding: var(--padding-layout-mobile);
+    margin: var(--margin-layout-mobile);
+
+    .about_sections {
+      flex-direction: column;
+
+      .about_left {
+        display: none;
+      }
+
+      .about_right {
+        .about_para {
+          line-height: 28px;
+
+          p {
+            font-size: 17px;
+          }
+        }
+
+        .about_skills {
+          font-size: 25px;
+
+          .about_skill {
+            font-size: 25px;
+
+            p {
+              font-size: 18px;
+              width: 135px;
+            }
+
+            hr {
+              height: 3px;
+            }
           }
         }
       }

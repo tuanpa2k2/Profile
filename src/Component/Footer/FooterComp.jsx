@@ -10,11 +10,8 @@ const FooterComp = () => {
     <div className="footers">
       <div className="footer__top">
         <div className="footer__top__left">
-          <h2>Snake **</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id harum consectetur tenetur ipsum labore soluta.
-            Obcaecati, velit.
-          </p>
+          <h2>Snake AT</h2>
+          <p>Cảm ơn bạn đã ghé thăm. Chúc bạn và gia đình luôn luôn bình an và hạnh phúc 🥰</p>
         </div>
         <div className="footer__top__right">
           <div className="abcd">
