@@ -34,7 +34,24 @@
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          word-wrap: break-word;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
         }
+      }
+
+      p {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
       }
 
       .services__readmore {
@@ -42,9 +59,10 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
-        border: 1px solid transparent;
+        border: 1px solid darkgray;
         padding: 10px 0;
         border-radius: 8px;
+        margin-top: 8px;
 
         &:hover {
           background: linear-gradient(

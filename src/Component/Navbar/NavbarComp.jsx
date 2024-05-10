@@ -6,8 +6,11 @@ import { IoMdClose } from "react-icons/io";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./NavbarComp.scss";
+import { useNavigate } from "react-router-dom";
 
-const NarbarComp = () => {
+// eslint-disable-next-line react/prop-types
+const NarbarComp = ({ isMenu = false }) => {
+  const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState("");
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false); // scrolled add className 'sticky-header'
@@ -28,31 +31,33 @@ const NarbarComp = () => {
 
   return (
     <div className={`navbar ${scrolled ? "sticky-header" : ""}`}>
-      <div className="logo">
+      <div className="logo" onClick={() => navigate("/")}>
         <span>my cv</span>
       </div>
-      <ul className={isMobile ? "nav_link_mobile" : "nav_menu"} onClick={() => setIsMobile(false)}>
-        <li onClick={() => setMenuActive("skill")} className={`${menuActive === "skill" ? "actives" : ""}`}>
-          <AnchorLink className="anchor-link" offset={90} href="#about">
-            Kĩ năng
-          </AnchorLink>
-        </li>
-        <li onClick={() => setMenuActive("about")} className={`${menuActive === "about" ? "actives" : ""}`}>
-          <AnchorLink className="anchor-link" offset={90} href="#service">
-            Dịch vụ
-          </AnchorLink>
-        </li>
-        <li onClick={() => setMenuActive("project")} className={`${menuActive === "project" ? "actives" : ""}`}>
-          <AnchorLink className="anchor-link" offset={90} href="#mywork">
-            Dự án
-          </AnchorLink>
-        </li>
-        <li onClick={() => setMenuActive("contact")} className={`${menuActive === "contact" ? "actives" : ""}`}>
-          <AnchorLink className="anchor-link" offset={90} href="#contact">
-            Liên hệ
-          </AnchorLink>
-        </li>
-      </ul>
+      {isMenu && (
+        <ul className={isMobile ? "nav_link_mobile" : "nav_menu"} onClick={() => setIsMobile(false)}>
+          <li onClick={() => setMenuActive("skill")} className={`${menuActive === "skill" ? "actives" : ""}`}>
+            <AnchorLink className="anchor-link" offset={90} href="#about">
+              Kĩ năng
+            </AnchorLink>
+          </li>
+          <li onClick={() => setMenuActive("about")} className={`${menuActive === "about" ? "actives" : ""}`}>
+            <AnchorLink className="anchor-link" offset={90} href="#service">
+              Dịch vụ
+            </AnchorLink>
+          </li>
+          <li onClick={() => setMenuActive("project")} className={`${menuActive === "project" ? "actives" : ""}`}>
+            <AnchorLink className="anchor-link" offset={90} href="#mywork">
+              Dự án
+            </AnchorLink>
+          </li>
+          <li onClick={() => setMenuActive("contact")} className={`${menuActive === "contact" ? "actives" : ""}`}>
+            <AnchorLink className="anchor-link" offset={90} href="#contact">
+              Liên hệ
+            </AnchorLink>
+          </li>
+        </ul>
+      )}
       <div className="nav_connect">
         <AnchorLink className="anchor-link" offset={90} href="#contact">
           Kết nối với tôi

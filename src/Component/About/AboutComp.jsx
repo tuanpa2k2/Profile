@@ -1,12 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { TbHandClick } from "react-icons/tb";
+
 import TitleComp from "../Title/TitleComp";
 import profile_img from "../../assets/default.jpg";
 import "./AboutComp.scss";
 
 const AboutComp = () => {
+  const navigate = useNavigate();
+
   return (
     <div id="about" className="container_about">
       <TitleComp title="Kĩ năng" />
@@ -39,7 +42,7 @@ const AboutComp = () => {
               <p>Github</p> <hr style={{ width: "70%" }} />
             </div>
           </div>
-          <div className="btn__showmore">
+          <div className="btn__showmore" onClick={() => navigate("/skill")}>
             <button>Show more</button>
             <TbHandClick />
           </div>
