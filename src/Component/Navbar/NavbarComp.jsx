@@ -9,7 +9,7 @@ import "./NavbarComp.scss";
 import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-const NarbarComp = ({ isMenu = false }) => {
+const NarbarComp = ({ isMenu = false, isIcon = false }) => {
   const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState("");
   const [isMobile, setIsMobile] = useState(false);
@@ -63,9 +63,11 @@ const NarbarComp = ({ isMenu = false }) => {
           Kết nối với tôi
         </AnchorLink>
       </div>
-      <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
-        {isMobile ? <IoMdClose /> : <HiMenu />}
-      </button>
+      {isIcon && (
+        <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <IoMdClose /> : <HiMenu />}
+        </button>
+      )}
     </div>
   );
 };

@@ -3,8 +3,11 @@ import React from "react";
 
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./HeroComp.scss";
+import { useNavigate } from "react-router-dom";
 
 const HeroComp = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="hero">
       <h2>Hii everyone,</h2>
@@ -14,11 +17,11 @@ const HeroComp = () => {
         </h1>
         <h1>một freelancer thích mọi thứ...</h1>
       </div>
-      <p>
-        Nhiều người kỳ vọng HLV Kim Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính ông
-        Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
-      </p>
-      <div className="button__hero">
+      <div className="abcd">
+        <p>Không có con đường dẫn đến thành công mà không có trông gai và thử thách...</p>
+        <p>Hãy tin rằng bạn có thể, và bạn đã hoàn thành nửa con đường!</p>
+      </div>
+      <div className="button__hero" onClick={() => navigate("/profile")}>
         <span>Tìm hiểu thêm ...</span>
         <AiOutlineDoubleRight />
       </div>

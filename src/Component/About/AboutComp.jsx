@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { TbHandClick } from "react-icons/tb";
 
 import TitleComp from "../Title/TitleComp";
-import profile_img from "../../assets/default.jpg";
+import profile_img from "../../assets/smart.jpg";
 import "./AboutComp.scss";
 
 const AboutComp = () => {
@@ -12,7 +12,7 @@ const AboutComp = () => {
 
   return (
     <div id="about" className="container_about">
-      <TitleComp title="Kĩ năng" />
+      <TitleComp title="Kiến thức chuyên môn" />
       <div className="about_sections">
         <div className="about_left">
           <img src={profile_img} alt="" />
@@ -21,7 +21,9 @@ const AboutComp = () => {
           <div className="about_para">
             <p>
               Nhiều người kỳ vọng HLV Kim Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính
-              ông Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
+              ông Kim cũng rất cần thành công tại VN để tạo cú hích cho sự nghiệp huấn luyện.Nhiều người kỳ vọng HLV Kim
+              Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính ông Kim cũng rất cần thành
+              công tại VN để tạo cú hích cho sự nghiệp huấn luyện.
             </p>
             <p>
               Nhiều người kỳ vọng HLV Kim Sang-sik sẽ mang làn gió mới đến cho đội tuyển VN, nhưng ít ai biết rằng chính

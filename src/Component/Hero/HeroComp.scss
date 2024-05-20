@@ -4,7 +4,7 @@
   align-items: start;
   justify-content: center;
   gap: 30px;
-  min-height: 670px;
+  min-height: 100vh;
   height: fit-content;
   background-image: url("../../assets/image-hero.jpg");
   background-position: center;
@@ -27,10 +27,21 @@
     }
   }
 
-  p {
-    font-weight: 500;
-    width: 80%;
-    color: darkgrey;
+  .abcd {
+    width: 100%;
+
+    p {
+      font-weight: 500;
+      width: 80%;
+      color: #fff;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+    }
   }
 
   .button__hero {
@@ -38,7 +49,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 12px 30px;
+    padding: 10px 50px;
     border: 2px solid #fff;
     border-radius: 10px;
     font-size: 22px;

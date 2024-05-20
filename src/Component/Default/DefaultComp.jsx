@@ -21,7 +21,7 @@ const DefaultComp = () => {
 
   return (
     <div>
-      <NavbarComp isMenu />
+      <NavbarComp isMenu isIcon />
       <HeroComp />
       <AboutComp />
       <ServiceComp />

@@ -1,4 +1,5 @@
 import NotFoundPage from "../Page/NotFoundPage/NotFoundPage";
+import ProfilePage from "../Page/ProfilePage/ProfilePage";
 import SkillPage from "../Page/SkillPage/SkillPage";
 
 export const routes = [
@@ -10,6 +11,11 @@ export const routes = [
   {
     path: "/skill",
     page: SkillPage,
+    isShowPage: true,
+  },
+  {
+    path: "/profile",
+    page: ProfilePage,
     isShowPage: true,
   },
   {
