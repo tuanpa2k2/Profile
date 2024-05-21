@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .navbar {
     padding: var(--padding-layout-mobile);
 

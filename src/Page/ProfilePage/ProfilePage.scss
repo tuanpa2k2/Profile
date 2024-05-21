@@ -264,7 +264,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .profiles {
     padding: var(--padding-layout-mobile);
 
@@ -308,6 +308,10 @@
       .target {
         border-radius: 0;
         padding: 6px;
+        background-image: url("../../assets/bgr_target.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
 
         .textt {
           h2 {
@@ -333,11 +337,27 @@
         width: 100%;
         margin-top: 10px;
 
+        .tinhcach {
+          background-image: url("../../assets/personality.png");
+        }
+        .diemmanh {
+          background-image: url("../../assets/bgr_strong.png");
+        }
+        .diemyeu {
+          background-image: url("../../assets/bgr_sweak.png");
+        }
+        .sothich {
+          background-image: url("../../assets/bgr_passion.png");
+        }
+
         .tinhcach,
         .diemmanh,
         .diemyeu,
         .sothich {
           padding: 8px 0;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
 
           .contentt {
             width: 100%;
