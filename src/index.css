@@ -5,10 +5,13 @@
 }
 
 :root {
-  --padding-layout: 0 160px;
+  --padding-layout: 0 8%;
+  --padding-layout-ipad: 0 4%;
+  --padding-layout-mobile: 0 3%;
+
   --margin-layout: 55px 0;
-  --padding-layout-mobile: 0 20px;
   --margin-layout-mobile: 25px 0;
+  --margin-layout-ipad: 25px 0;
 }
 
 body {
